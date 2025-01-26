@@ -1,0 +1,108 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-header);
+  height: 100px;
+}
+
+.header img {
+  height: 90px;
+}
+
+.container-general {
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto;
+  width: 900px;
+  background-color: white;
+  border-top: 5px solid var(--color-border);
+  border-right: 5px solid var(--color-border);
+  border-left: 5px solid var(--color-border);
+}
+
+.navigation {
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-navigation);
+  height: 100px;
+}
+
+.icon-and-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.icon-and-title img {
+  width: 60px;
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+.icon-and-title img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.icon-and-title h2 {
+  font-size: 20px;
+}
+
+
+.navigation :nth-child(1) {
+  margin-left: 20px;
+}
+
+.navigation :nth-child(6) {
+  margin-right: 20px;
+}
+
+.container-infos-vtuber {
+  display: flex;
+  padding: 30px 30px 60px 30px;
+}
+
+.locale-social {
+  text-align: center;
+  color: var(--color-white);
+  font-weight: bold;
+  width: 85%;
+  margin: 12px 0;
+  font-size: 18px;
+  background-color: var(--color-background-text);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links img {
+  width: 40px;
+}
+
+.container-vtuber-and-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-vtuber {
+  width: 240px;
+}
+
+.container-about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-games-and-comissions {
+  display: flex;
+  flex-direction: column;
+}
