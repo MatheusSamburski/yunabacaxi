@@ -1,0 +1,184 @@
+.container-general {
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto;
+  width: 1160px;
+  background-color: white;
+  border-radius: 8px;
+  border: 5px solid var(--color-border);
+
+  .navigation {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-navigation);
+    height: 100px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    .icon-navigation-x {
+      margin: 0 70px;
+      color: var(--color-white);
+    }
+
+    .container-icons-pages {
+      display: flex;
+      gap: 50px;
+      height: 100%;
+
+      .icon-and-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-white);
+        width: 100px;
+      }
+
+      .icon-and-title {
+        img {
+          width: 60px;
+          margin: 0 !important;
+          cursor: pointer;
+        }
+
+        img:hover {
+          transform: scale(1.2);
+          transition: all 0.5s;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        &.home-selected,
+        &.galery-selected,
+        &.contact-selected,
+        &.others-selected {
+          width: 100px;
+          height: 100%;
+          background-color: var(--color-container-selected);
+          color: var(--color-text-selected);
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .container-infos-vtuber {
+    display: flex;
+    position: relative;
+
+    .container-icons-social {
+      display: flex;
+      position: absolute;
+      bottom: 95px;
+      left: 25px;
+
+      a {
+        display: flex;
+        align-items: start;
+
+        img {
+          width: 56px;
+        }
+      }
+
+      a:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+      }
+
+      .icon-x {
+        margin-top: 3px;
+        margin-right: 0px;
+      }
+
+      .icon-discord {
+        margin-top: 4px;
+        margin-left: 4px;
+        margin-right: 6px;
+      }
+
+      .icon-steam {
+        margin-right: 6px;
+        margin-top: 3px;
+      }
+
+      .icon-spotify {
+        margin-left: -6px;
+        margin-right: 6px;
+        margin-top: 3px;
+      }
+
+      .icon-kofi {
+        margin-top: -2px;
+        margin-top: 0px;
+      }
+    }
+
+    .container-wish-list {
+      position: absolute;
+      display: flex;
+      top: 180px;
+      left: 105px;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+        color: var(--color-name-selected);
+
+        img:hover {
+          transform: scale(1.1);
+          transition: all 0.5s;
+        }
+      }
+
+      .container-shoppee {
+        img {
+          width: 74px;
+        }
+
+        span {
+          margin-top: 4px;
+        }
+      }
+    }
+
+    .my-spotify {
+      position: absolute;
+      bottom: 140px;
+      left: 145px;
+    }
+
+    .my-spotify:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+
+    .lives-spotify {
+      position: absolute;
+      bottom: 39px;
+      left: 145px;
+    }
+
+    .lives-spotify:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+  }
+
+  .navigation-pink-footer {
+    background-color: var(--background-navigation);
+    height: 50px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+}
